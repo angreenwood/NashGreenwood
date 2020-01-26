@@ -5,12 +5,17 @@
 
   <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <!-- Add a menu:
-   Log in / Sign up - when the user is not logged in
-   Username / Log out - when the user is logged in
-  -->
+  <div class="login">
+    <h1>Login</h1>
+      <form method="post">
+        <input type="text" name="u" placeholder="Username" required="required" />
+          <input type="password" name="p" placeholder="Password" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+      </form>
+  </div>
   <div data-netlify-identity-menu></div>
 
   <!-- Add a simpler button:
